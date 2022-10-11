@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EXploring HTML and css</title>
+    <style>
+      #header {
+        width: 700px;
+        height: 100px;
+        background-color: rgb(57, 57, 244);
+        color: black;
+        margin: auto;
+        margin-bottom: 10px;
+      }
+      #section {
+        width: 700px;
+        height: 700px;
+        background-color: rgba(236, 157, 10, 0);
+        margin: auto;
+        margin-bottom: 10px;
+      }
+      #aside,
+      #article {
+        float: left;
+        height: 700px;
+      }
+      #aside {
+        width: 345px;
+        background-color: red;
+        margin-right: 5px;
+      }
+      #article {
+        width: 350px;
+        background-color: purple;
+      }
+      #footer {
+        width: 700px;
+        height: 100px;
+        margin: auto;
+        background-color: rgb(57, 57, 244);
+      }
+      #clear_float {
+        clear: both;
+      }
+      h3{
+        text-align: center;
+        margin: auto;
+      }
+      #form_element{
+        padding-left: 10px;
+      }
+      input[type="text"]{
+        width: 80px;
+        background-color: gold;
+      }
+      #a-visited{
+        color: green;
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <ul>
+        <li><a href="home.html" >Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </header>
+
+    <section id="section">
+      <aside id="aside">
+        <address id="address">
+          Written by <a href="mailto:webmaster@example.com">Mojisola</a>
+          visit us at:<br>
+          example.com <br>
+          BOX 564, Disneyand <br>
+          USA
+        </address>
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipiscing elit nunc quis
+            leo, arcu vitae nec diam nibh duis facilisi aliquam praesent mattis
+            imperdiet, eros himenaeos euismod porta torquent maecenas nisi
+            ultricies at. Nascetur nisi tempus per nostra gravida urna netus
+            sapien in augue fringilla tincidunt sagittis feugiat, sollicitudin
+            platea tellus ultricies parturient ad accumsan ac pretium taciti
+            euismod at. Commodo aptent velit lacus tellus eget netus, proin
+            facilisis vel viverra sociosqu arcu, platea curae cursus ultricies
+            metus. Libero urna diam etiam ultrices hac sed, viverra rhoncus
+            elementum penatibus facilisi id tellus, aptent mi ultricies sociosqu
+            tincidunt. Semper per ridiculus sapien maecenas viverra at litora mi
+            duis, interdum risus phasellus torquent elementum quisque arcu
+            commodo elit etiam, diam gravida aliquet consequat adipiscing
+            habitant praesent accumsan. Faucibus sit lorem tortor vel ad,
+            ultrices dapibus nec lectus, viverra maecenas per consectetur.
+            Aliquet consectetur erat porta lectus class nascetur quam, efficitur
+            sed aliquam per bibendum metus, aenean nam platea eros taciti in.
+            Magna purus quis eget libero cubilia pellentesque praesent, montes
+            posuere morbi fermentum mattis scelerisque ac justo, augue fusce nec
+            viverra vitae per. A arcu odio placerat fringilla condimentum diam
+            faucibus, porta himenaeos quis pretium hendrerit aliquam. Platea
+            aptent habitasse eu mattis egestas cursus lobortis litora placerat,
+            maximus elementum lectus primis dui donec taciti efficitur, in hac
+            diam sagittis fermentum felis ad ultrices.
+          </p>
+
+
+
+      </aside>
+      <article id="article">
+        <div id="form_element">
+          <h3>Register here</h3>
+          <form action="#" method="get" id="form">
+            <label for="frame">First name</label>
+            <input for="text" id="frame" name="frame"><br><br>
+            <label for="lname">Last name</label>
+            <input type="text" id="lname" name="lname"><br><br>
+  
+            <label for="phone">Phone No:</label>&nbsp;
+            <input type="text" id="phone" name="phone"><br><br>
+            
+
+
+<label for="age">Age:</label>
+<input type="text" id="age" name="age"><br><br>
+
+<label for="email">Email:</label>
+<input type="text" id="email" name="email"><br><br>
+
+
+
+
+           <label for="cars">Gender:</label>
+            <select id="gender">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select><br><br>
+
+            <label for="cats">Country:</label>
+            <select id="country">
+              <option value="america">America</option>
+<option value="brazil">Brazil</option>
+<option value="colombia">Colombia</option>
+<option value="denmark">Denmark</option>
+<option value="egypt">Egypt</option>
+<option value="finland">Finland</option>
+<option value="germany">Germany</option>
+<option value="hawaii">Hawaii</option>
+<option value="ireland">Ireland</option>
+<option value="jamaica">Jamaica</option>
+<option value="kuwait">Kuwait</option>
+<option value="laos">Laos</option>
+<option value="mexico">Mexico</option>
+<option value="nigeria">Nigeria</option>
+<option value="oman">Oman</option>
+<option value="poland">Poland</option>
+<option value="qatar">Qatar</option>
+<option value="russia">Russia</option>
+<option value="singapore">Singapore</option>
+<option value="turkey">Turkey</option>
+<option value="Ukraine">Ukraine</option>
+<option value="vietnam">Vietnam</option>
+<option value="wurttemberg">Wurttemberg</option>
+<option value="yemen">Yemen</option>
+<option value="zambia">Zambia</option>
+            </select><br><br>
+
+            <input type="submit" value="submit">
+          </form>
+        </div>
+      </article>
+      <div id="clear_float">
+        
+      </div>
+    </section>
+
+    <footer id="footer"></footer>
+  </body>
+</html>
