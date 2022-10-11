@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>My first three.js app</title>
+		<style>
+			body { margin: 0; }
+		</style>
+	</head>
+	<body>
+		
+		<script type="module">
+			import * as THREE from "https://cdn.skypack.dev/three"
+			const scene = new THREE.Scene();
+			const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+
+			
+
+			
+			const geometry = new THREE.BoxGeometry( 1, 1, 1 );
+			const material = new THREE.MeshBasicMaterial( { color: 0xFF00FF } );
+			const cube = new THREE.Mesh( geometry, material );
+			scene.add( cube );
+
+			const geometry1 = new THREE.BoxGeometry( 1, 1, 1 );
+			const material1 = new THREE.MeshBasicMaterial( { color: 0xf01e3d } );
+			const cube1 = new THREE.Mesh( geometry1, material1 );
+			scene.add( cube1 );
+
+			const geometry2 = new THREE.BoxGeometry( 1, 1, 1 );
+			const material2 = new THREE.MeshBasicMaterial( { color: 0x47fd88 } );
+			const cube2 = new THREE.Mesh( geometry2, material2 );
+			scene.add( cube2 );
+
+			cube1.position.x =-3
+			cube2.position.x =3
+
+			camera.position.z = 5;
+			const renderer = new THREE.WebGLRenderer();
+			renderer.setSize( window.innerWidth, window.innerHeight );
+			document.body.appendChild( renderer.domElement );
+				cube.position.x += 0.03
+				cube.position.y += 0.04
+
+				cube.position.x += 0.05
+				cube.position.y += 0.05
+
+
+
+
+			function animate() {
+				requestAnimationFrame( animate );
+				renderer.render( scene, camera );
+				cube.rotation.x += 0.02;
+				cube.rotation.y += 0.03;
+				
+				
+				cube1.rotation.x += 0.03;
+				cube1.rotation.y += 0.06;
+				
+
+				cube2.rotation.x += 0.03;
+				cube2.rotation.y += 0.09;
+
+				
+				
+			};
+			
+
+			animate();
+			
+
+			
+			
+		</script>
+	</body>
+</html>
